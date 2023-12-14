@@ -17,6 +17,7 @@
     border-radius: 4px;
     position: relative;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 1.8em;
 }
 
 .accion{
@@ -45,9 +46,23 @@ a{
     color: #dd1818;
 }
 
+a:hover{
+    opacity: 0.8;
+}
+
+a:active{
+    background-color: red;
+    border-radius: 4px;
+}
+
+a:focus{
+    background-color: #dd1818;
+}
+
 .titulo{
     text-transform: uppercase;
     padding: 10px;
+    text-align: center;
 }
 
 .paragrafo{
@@ -73,6 +88,13 @@ a{
     border-bottom: solid 2px #C6426E;
     padding-bottom: 1em;
     border-radius: 4px;
+    font-size: 2em;
+}
+
+.main-imagen{
+    float: left;
+    margin-right: 1em;
+    height: 350px;
 }
 
 .posicion{
@@ -80,6 +102,7 @@ a{
     color: white;
     padding: 10px;
     border-radius: 4px;
+    margin-right: 0.5em;
 }
 
 
