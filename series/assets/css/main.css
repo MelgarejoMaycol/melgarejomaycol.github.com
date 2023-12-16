@@ -1,40 +1,45 @@
+/* Estilo del contenedor principal */
 .contenedor {
-  background: #242424;
+  background: #242424; /* Fondo oscuro */
+  /* Gradiente de color de izquierda a derecha */
   background: -webkit-linear-gradient(to right, #11003f, #272727);
   background: linear-gradient(to right, #11003f, #272727);
-  height: 100vh;
+  height: 100vh; /* Altura del 100% de la ventana */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Estilos del contenido principal */
 .contenido {
-  max-width: 960px;
-  max-height: 500px;
+  max-width: 960px; /* Ancho máximo del contenido */
+  max-height: 500px; /* Altura máxima del contenido */
   width: 100%;
   height: 80%;
   position: relative;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
   box-shadow: inset 3px 3px 10px rgb(255 255 255 / 5%),
-    2px 2px 8px rgba(0 0 0 / 50%);
-  color: white;
-  overflow-x: hidden;
+    2px 2px 8px rgba(0 0 0 / 50%); /* Sombra del contenido */
+  color: white; /* Color del texto */
+  overflow-x: hidden; /* Ocultar desplazamiento horizontal */
 }
 
+/* Estilo del botón de salir en los apartados de series */
 .accion {
   position: absolute;
   top: 1em;
   right: 1em;
 }
 
+/* Estilos del botón de cerrar */
 .close {
   height: 40px;
   width: 40px;
   color: white;
   border-radius: 50%;
   background-color: #dd1818;
-  display: inline-block;
+  /* Sombra para resaltar el botón */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-weight: 300;
   cursor: pointer;
@@ -43,11 +48,12 @@
   justify-content: center;
 }
 
-
-img{
+/* Tamaño máximo para las imágenes */
+img {
   max-width: 100%;
 }
 
+/* Estilos para los enlaces */
 a {
   text-decoration: none;
   color: #ee0000;
@@ -55,19 +61,23 @@ a {
   font-weight: 500;
 }
 
+/* Efecto hover para los enlaces */
 a:hover {
   opacity: 0.8;
 }
 
+/* Efecto active para los enlaces */
 a:active {
   background-color: rgb(240, 81, 81);
   border-radius: 4px;
 }
 
+/* Efecto focus para los enlaces */
 a:focus {
   background-color: #e63b3b;
 }
 
+/* Estilo para títulos */
 .titulo {
   text-transform: uppercase;
   padding: 10px;
@@ -76,21 +86,24 @@ a:focus {
   padding-bottom: 2cm;
 }
 
+/* Estilo para párrafos */
 .paragrafo {
   line-height: 1.8em;
   font-weight: 300;
 }
 
+/* Estilos para tablas */
 .table {
   width: 100%;
   border-spacing: 0;
 }
 
-.table td,.table th {
+.table td, .table th {
   padding: 5px;
   text-align: left;
 }
 
+/* Estilos para elementos de título */
 .title-item {
   border-bottom: solid 2px #c6426e;
   padding-bottom: 1em;
@@ -98,12 +111,14 @@ a:focus {
   font-size: 2em;
 }
 
+/* Estilos para imágenes principales */
 .main-imagen {
   float: left;
   margin-right: 1em;
   height: 350px;
 }
 
+/* Estilo de posición */
 .posicion {
   background-color: #c6426e;
   color: white;
@@ -112,79 +127,71 @@ a:focus {
   margin-right: 0.5em;
 }
 
-.contenido::-webkit-scrollbar{
+/* Estilos para la barra de desplazamiento en el contenido */
+.contenido::-webkit-scrollbar {
   width: 0.5em;
 }
-.contenido::-webkit-scrollbar-thumb{
+
+.contenido::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: inset 3px 3px 10px rgb(255 255 255 / 5%),
     2px 2px 8px rgba(0 0 0 / 50%);
 }
 
-@media (min-height:550px){
-  .contenido{
+/* Estilos responsivos para pantallas de diferentes tamaños */
+@media (min-height: 550px) {
+  .contenido {
     height: 500px;
   }
 }
 
-@media(min-width:900px){
-  td{
+@media (min-width: 900px) {
+  td {
     display: table-cell;
     width: auto;
   }
-  th{
+  th {
     display: table-cell;
   }
-  td:nth-of-type(1){
+  td:nth-of-type(1) {
     font-size: 1em;
   }
-  .contenido{
+  .contenido {
     padding: 1.8em;
   }
 }
 
-@media(max-width:345px){
-  .posicion{
+@media (max-width: 345px) {
+  .posicion {
     display: none;
   }
 }
 
-@media(max-width:600px){
-  .contenido{
+@media (max-width: 600px) {
+  .contenido {
     padding: 1em;
     overflow-y: scroll;
   }
-  .titulo{
+  .titulo {
     padding-top: 0.5cm;
     padding-bottom: 1cm;
   }
-  td{
+  td {
     display: block;
     width: 100%;
   }
-  th{
+  th {
     display: none;
   }
-  td:nth-of-type(1){
+  td:nth-of-type(1) {
     font-size: 1.5em;
     font-weight: bold;
     color: white;
     padding-top: 2em;
   }
 
-  td:nth-of-type(4){
+  td:nth-of-type(4) {
     display: none;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
