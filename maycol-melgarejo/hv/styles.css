@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #1A5276;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+.header-title {
+    display: inline-block;
+    width: 400px;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    display: inline-block;
+    width: 400px;
+    font-weight: 200;
+}
+
+.no-experience {
+    background-color: #3498DB;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.content-section {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.education {
+    margin-top: 4rem;
+    display: inline-block;
+    width: 68%;
+    vertical-align: top;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.education-details {
+    margin-top: 32px;
+}
+
+.education-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+.image-container {
+    display: inline-block;
+    width: 30%;
+    margin-top: 30px;
+}
+
+.profile-image {
+    width: 19rem;
+}
+
+.professional-experience {
+    margin-top: 1rem;
+}
+
+.experience-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+.other-info {
+    margin-top: 70px;
+}
+
+.other-list {
+    margin-top: 12px;
+    padding: 0px;
+}
+
+.other-item {
+    margin-top: 16px;
+}
+
+.social-media {
+    margin: 70px 0px;
+}
+
+.social-list {
+    margin-top: 12px;
+    padding: 0px;
+}
+
+.social-item {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.social-link{
+    display: inline-block;
+    background-color: palevioletred;
+    color: white;
+    text-decoration: none;
+    padding: .5rem .6rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.git{
+    background-color: #1A5276;
+}
+
+.social-link:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .content-section {
+        width: 100%;
+    }
+    
+    .education,
+    .image-container,
+    .professional-experience,
+    .other-info,
+    .social-media {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .education {
+        margin-top: 2rem;
+    }
+    
+    .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .education-details,
+    .experience-details,
+    .other-list,
+    .social-list {
+        margin-top: 16px;
+    }
+    
+    .education-title,
+    .experience-title,
+    .other-item {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    .profile-image {
+        width: 80%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .social-link {
+        display: block;
+        background-color: palevioletred;
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 1rem;
+        margin: 8px auto;
+        text-align: center;
+        width: 80%;
+        max-width: 200px;
+        transition: transform 0.3s ease;
+    }
+}
