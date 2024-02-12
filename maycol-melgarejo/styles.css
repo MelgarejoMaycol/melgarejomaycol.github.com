@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #1A5276;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-titulo{
+    font-size: 2.5rem;
+}
+
+.header-subtitulo{
+    font-size: 2rem;
+    padding-top: .4rem;
+}
+
+.descripcion{
+    background-color: #3498DB;
+    text-align: center;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.contenido{
+    padding: 3rem 10%;
+    width: 100%;
+}
+
+.titulo{
+    font-size: 3rem;
+}
+
+.educacion-foto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.educacion-titulo{
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.educacion-descripcion{
+    font-size: 1.2rem;
+}
+
+.imagen{
+    width: 21rem;
+    margin: 6px;
+    border-radius: 1rem;
+}
+
+.titulo-experiencia{
+    margin-top: 1rem;
+}
+
+.experiencia-titulo{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.experiencia-descripcion{
+    font-size: 1.3rem;
+}
+
+.otros{
+    padding-top: 4rem;
+}
+
+.otros-puntos{
+    padding-top: .7rem;
+    font-size: 1.3rem;
+}
+
+.redes-sociales{
+    padding: 4rem 0;
+}
+
+.titulo-redes{
+    margin-bottom: 2rem;
+}
+
+.boton{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+}
+
+.boton-instagram{
+    background-color: palevioletred;
+}
+
+.boton-github{
+    background-color: #1A5276;
+    margin-left: 1rem;
+}
+
+@media(max-width:762px){
+    .educacion-foto{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .imagen{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .titulo{
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:656px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-titulo{
+        margin: 1rem;
+    }
+
+    .header-subtitulo{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:417px){
+    .imagen{
+        width: 100%;
+    }
+}
