@@ -145,6 +145,10 @@
     .header-subtitulo{
         font-size: 2rem;
     }
+
+    .titulo-experiencia{
+        margin-top: 2.5rem;
+    }
 }
 
 @media(max-width:417px){
