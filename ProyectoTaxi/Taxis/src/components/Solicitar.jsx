@@ -102,7 +102,7 @@ const Solicitar = () => {
     };
 
     const PedirServicio = () => {
-        alert("Servicio solicitado");
+        alert("Servicio solicitado por favor espere al conductor" + "\n" + "Monto: " + monto + "\n" + "Ubicación Actual: " + ubicacionActual + "\n" + "Ubicación Destino: " + ubicacionDestino + "\n" + "Gracias por preferirnos");
     }
 
     const handleSubmit = (event) => {
@@ -288,35 +288,30 @@ const Solicitar = () => {
                 contentLabel="Documento HTML"
             >
                 {/* <div className="d-flex"> */}
-                    {/* <div className="w-50"> */}
-                        <h2 className="tituloPaginas">Confirmar Viaje</h2>
-                        <div w-100>
-                            <div className="d-flex solicitarImagenEncuesta m-3">
-                                <div className="SolicitarImagenPequeñaContenedor">
-                                    <img src="./src/assets/ImagenSignoPesos.png" alt="" className="SolicitarImagenPequeñaMonto" />
-                                </div>
-                                <div className="SolicitarInputContenedor">
-                                    <label htmlFor="Monto" className="text-black">Monto</label>
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        placeholder="Monto"
-                                        id="Monto"
-                                        value={monto}
-                                        readOnly
-                                    />
-                                </div>
-                            </div>
-                            <div className="text-center">
-                                <button className="BotonGeneral" onClick={PedirServicio}>Pedir Servicio</button>
-                            </div>
+                {/* <div className="w-50"> */}
+                <h2 className="tituloPaginas">Confirmar Viaje</h2>
+                <div w-100>
+                    <div className="d-flex solicitarImagenEncuesta m-3">
+                        <div className="SolicitarImagenPequeñaContenedor">
+                            <img src="./src/assets/ImagenSignoPesos.png" alt="" className="SolicitarImagenPequeñaMonto" />
                         </div>
-                        <button onClick={closeModal} className="BotonGeneral">Cerrar</button>
-                    {/* </div> */}
-                    {/* <div className="w-50">
-                        <div ref={mapRef} style={{ width: "100%", height: "500px", borderRadius: "8px" }}></div>
-                    </div> */}
-                {/* </div> */}
+                        <div className="SolicitarInputContenedor">
+                            <label htmlFor="Monto" className="text-black">Monto</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Monto"
+                                id="Monto"
+                                value={monto}
+                                readOnly
+                            />
+                        </div>
+                    </div>
+                    <div className="text-center">
+                        <button className="BotonGeneral" onClick={() => {closeModal(); PedirServicio();}}>Pedir Servicio</button>
+                    </div>
+                </div>
+                <button onClick={closeModal} className="BotonGeneral">Cerrar</button>
             </Modal>
             <Footer />
         </div>
