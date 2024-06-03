@@ -1,3 +1,8 @@
-import React {} from "React";
-import '../../src/estilos/stylesEsenciales.css';
-import '../../src/estilos/styles.css';
+import React from 'react'
+
+export const ConductoresLista = () => {
+  return (
+    <div>ConductoresLista</div>
+  )
+}
+
